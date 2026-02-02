@@ -1,0 +1,38 @@
+# --- Dependencies ---
+node_modules/
+package-lock.json   # Optional: Keep this if you want exact versioning, ignore if it causes conflicts
+yarn.lock           # Optional: Keep if using Yarn
+pnpm-lock.yaml      # Optional: Keep if using PNPM
+
+# --- System Files (OS junk) ---
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
+
+# --- Environment Variables (CRITICAL) ---
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+
+# --- Build Outputs (Don't commit compiled code) ---
+dist/
+build/
+out/
+.next/
+# *.md
+# --- IDE Settings (Personal preferences) ---
+.vscode/
+.idea/
+
+# --- Vercel Specific (For your Landing Page) ---
+.vercel/
+landing-page/.vercel/
+
+# --- Extension Specific ---
+# If you pack the extension into a .zip manually
+*.zip
+*.crx
