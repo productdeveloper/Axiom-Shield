@@ -1,4 +1,4 @@
-# Axiom Shield Landing Page 🛡️
+# Axiom Shield: Open Source AI Privacy Extension & Landing Page 🛡️
 
 The official landing page for **Axiom Shield**, a privacy-first browser extension designed to protect sensitive data and prevent legal liability during AI sessions.
 
