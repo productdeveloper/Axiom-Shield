@@ -7,7 +7,9 @@
         "dev": "vite",
         "build": "vite build",
         "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-        "preview": "vite preview"
+        "preview": "vite preview",
+        "build:extension": "bash scripts/build-extension.sh",
+        "package:extension": "npm run build:extension && cd dist-extension && zip -r ../axiom-shield-v1.0.zip ."
     },
     "dependencies": {
         "lucide-react": "^0.344.0",
