@@ -74,6 +74,7 @@ src/                    # Landing Page React Source
 This landing page, like the Axiom Shield extension itself, is designed with privacy in mind:
 - **Zero Tracking**: No Google Analytics or third-party tracking pixels.
 - **Client-Side Demo**: All text processed in the interactive demo stays local to the user's browser.
+- **Auditable Code**: Want to verify our code is safe? See our [Security Audit Guide](SECURITY.md).
 
 ## 📄 License
 

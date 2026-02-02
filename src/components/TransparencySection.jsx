@@ -55,7 +55,7 @@ export default function TransparencySection() {
                                 <Github size={18} /> View Source Code
                             </a>
                             <span className="text-gray-600">|</span>
-                            <a href="#" className="flex items-center gap-2 text-white hover:text-green-accent transition-colors font-bold">
+                            <a href="https://github.com/productdeveloper/Axiom-Shield/blob/main/SECURITY.md" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white hover:text-green-accent transition-colors font-bold">
                                 <FileText size={18} /> Security Audit Guide
                             </a>
                         </div>

@@ -26,6 +26,7 @@ out/
 # Internal Planning Docs
 *.md
 !README.md
+!SECURITY.md
 
 # --- IDE Settings (Personal preferences) ---
 .vscode/
