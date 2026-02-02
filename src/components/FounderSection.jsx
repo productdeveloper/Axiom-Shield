@@ -20,6 +20,11 @@ export default function FounderSection() {
                         <a href="https://github.com/productdeveloper/Axiom-Shield" target="_blank" rel="noopener noreferrer" className="hover:text-green-accent transition-colors font-medium">GitHub</a>
                     </div>
 
+                    <a href="https://blog.aimagine.in/axiom-shield-security-tool/" target="_blank" rel="noopener noreferrer" className="bg-transparent border border-white/20 hover:border-green-accent hover:text-green-accent text-white px-8 py-3 rounded-full font-bold transition-all inline-block">
+                        Read the Story →
+                    </a>
+
+
                 </div>
             </div>
         </section>
