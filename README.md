@@ -36,7 +36,7 @@ Axiom Shield provides a safety layer for ChatGPT, Gemini, Claude, and other AI p
 1. Clone the repository:
    ```bash
    git clone https://github.com/productdeveloper/Axiom-Shield.git
-   cd axiom-shield-landing
+   cd Axiom-Shield
    ```
 
 2. Install dependencies:
@@ -59,12 +59,13 @@ npm run build
 ## 📂 Project Structure
 
 ```text
-src/
+axiom-shield/           # Browser Extension Source Code
+src/                    # Landing Page React Source
 ├── assets/             # Images and static assets
-├── components/         # Reusable UI components (Hero, Features, FounderSection, etc.)
-├── pages/              # Main page layouts (LandingPage, Privacy, Terms)
-├── App.jsx             # Main application & routing configuration
-├── index.css           # Global styles and Tailwind directives
+├── components/         # Reusable UI components
+├── pages/              # Main page layouts
+├── App.jsx             # Main application & routing
+├── index.css           # Global styles
 └── main.jsx            # Entry point
 ```
 
