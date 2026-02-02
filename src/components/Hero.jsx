@@ -16,13 +16,19 @@ export default function Hero() {
                         Gemini, Claude, and more.
                     </p>
 
-                    <div className="flex flex-wrap gap-4 mb-16">
-                        <button className="bg-green-accent hover:bg-green-500 text-background px-8 py-4 rounded-full font-bold text-lg shadow-[0_4px_20px_rgba(16,185,129,0.3)] transition-all hover:-translate-y-1">
-                            Add to Chrome — It's Free
-                        </button>
-                        <a href="#features" className="bg-surface hover:bg-surface/80 text-white px-8 py-4 rounded-full font-bold text-lg transition-all text-center">
-                            Explore Features
-                        </a>
+                    <div className="flex flex-col gap-3">
+                        <div className="flex flex-wrap gap-4">
+                            <button className="bg-white/10 text-gray-400 px-8 py-4 rounded-full font-bold text-lg cursor-not-allowed border border-white/5 flex items-center gap-2">
+                                Add to Chrome
+                                <span className="w-2 h-2 bg-yellow-500 rounded-full animate-pulse"></span>
+                            </button>
+                            <a href="#features" className="bg-surface hover:bg-surface/80 text-white px-8 py-4 rounded-full font-bold text-lg transition-all text-center">
+                                Explore Features
+                            </a>
+                        </div>
+                        <p className="text-xs text-yellow-500/80 font-bold tracking-widest uppercase pl-4">
+                            Pending Chrome Web Store Approval
+                        </p>
                     </div>
 
                     <div className="flex gap-12">
