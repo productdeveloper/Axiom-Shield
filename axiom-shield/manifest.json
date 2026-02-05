@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Axiom Shield",
+  "name": "Axiom Shield – Privacy-First AI Safety",
   "version": "1.0",
   "description": "Privacy-first safety for AI tools. Detects and redacts PII, helps prevent secret leaks, and warns about risky language locally.",
   "permissions": [
