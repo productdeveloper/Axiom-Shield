@@ -3,29 +3,29 @@ export default function Features() {
         {
             icon: "🔒",
             title: "Mask Personally Identifiable Information",
-            description: "Instantly masks emails, phone numbers, SSNs, and credit cards before they ever reach the AI."
+            description: "Automatically detects and masks common Personally Identifiable Information (PII) like emails, phone numbers, credit card numbers, SSNs and IDs before they reach AI tools."
         },
         {
             icon: "🛡️",
             title: "Secret Blocker",
-            description: "Detects and blocks OpenAI, AWS, GitHub, Anthropic, and Google API keys from being leaked in prompts."
+            description: "Helps prevent accidental exposure of common API keys and secrets by detecting known key patterns before submission."
         },
         {
             icon: "⚖️",
             title: "View Liability Alerts",
-            description: "Passive alerts for risky words like \"guarantee\" or \"warranty\" that could create legal binding."
+            description: "Provides early warnings for potentially risky language that could create unintended commitments."
         },
         {
             icon: "🌍",
             title: "Multi-Platform Ready",
-            description: "Works across ChatGPT, Gemini, Claude, and more."
+            description: "Works across popular AI tools like ChatGPT, Gemini, Claude, and more."
         }
     ];
 
     return (
         <section id="features" className="py-24 bg-surface/30">
             <div className="container mx-auto px-6">
-                <h2 className="text-4xl font-bold text-center mb-16 text-white">Bulletproof Security Suite</h2>
+                <h2 className="text-4xl font-bold text-center mb-16 text-white">Practical Safety Controls for Everyday AI Use</h2>
                 <div className="grid md:grid-cols-2 gap-8">
                     {features.map((feature, index) => (
                         <div key={index} className="bg-surface p-10 rounded-3xl border border-white/5 hover:border-green-accent/50 transition-all hover:-translate-y-1 group">

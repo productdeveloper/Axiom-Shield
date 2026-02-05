@@ -6,6 +6,7 @@ export default function Footer() {
             <div className="container mx-auto px-6 flex flex-col items-center">
                 <div className="flex flex-col items-center mb-8">
                     <p className="text-gray-400 text-sm mb-2">Questions? Contact us at <a href="mailto:contact@aimagine.in" className="text-green-accent hover:underline">contact@aimagine.in</a></p>
+                    <p className="text-green-accent font-bold text-sm mb-2 uppercase tracking-widest">Your data never leaves your browser. No servers. No tracking. No logs.</p>
                     <p className="text-gray-500 text-xs uppercase tracking-widest font-bold">© 2026 Axiom Shield. A Privacy product by AImagine Labs.</p>
                 </div>
 

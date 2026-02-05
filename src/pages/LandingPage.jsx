@@ -2,10 +2,14 @@ import { useEffect } from 'react';
 import HeaderBanner from '../components/HeaderBanner';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
+import HowItWorks from '../components/HowItWorks';
+import DataPrivacyComparison from '../components/DataPrivacyComparison';
 import Features from '../components/Features';
+import PricingSection from '../components/PricingSection';
 import TransparencySection from '../components/TransparencySection';
 import FounderSection from '../components/FounderSection';
 import TrustBanner from '../components/TrustBanner';
+import PermissionsSection from '../components/PermissionsSection';
 import Footer from '../components/Footer';
 
 export default function LandingPage() {
@@ -32,10 +36,14 @@ export default function LandingPage() {
             <Navbar />
             <main>
                 <Hero />
+                <HowItWorks />
+                <DataPrivacyComparison />
                 <Features />
+                <PricingSection />
                 <TransparencySection />
                 <FounderSection />
                 <TrustBanner />
+                <PermissionsSection />
             </main>
             <Footer />
         </div>

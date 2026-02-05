@@ -16,7 +16,7 @@ export default function Privacy() {
                     <section className="animate-in fade-in slide-in-from-bottom-4 duration-500">
                         <h2 className="text-2xl font-bold mb-6 text-white border-l-4 border-green-accent pl-4">1. The Short Version</h2>
                         <p className="text-gray-400 leading-relaxed text-lg">
-                            Axiom Shield is designed to protect your privacy, not invade it. We do not collect, store, or transmit your personal data. The extension runs entirely on your local device (Client-Side). What you type in your browser stays in your browser.
+                            Axiom Shield is designed to reduce the risk of accidental data exposure, not collect user data. The extension runs entirely on your local device. All detection and redaction logic executes inside your browser. No data is transmitted to external servers.
                         </p>
                     </section>
 
@@ -25,50 +25,70 @@ export default function Privacy() {
                         <div className="space-y-6 text-gray-400 text-lg leading-relaxed">
                             <p>
                                 <strong className="text-white block mb-2">Personal Information:</strong>
-                                We collect zero personal information (PII). We do not know who you are, what you type, or which websites you visit.
+                                Axiom Shield does not collect, store, or transmit personal information. The extension does not identify users and does not create user profiles.
                             </p>
                             <p>
                                 <strong className="text-white block mb-2">Usage Data:</strong>
-                                We do not collect analytics or usage metrics. We do not use Google Analytics, Mixpanel, or any tracking pixels.
+                                Axiom Shield does not collect analytics, telemetry, or usage metrics. We do not use tracking pixels, cookies, or third-party analytics tools.
                             </p>
                             <p>
                                 <strong className="text-white block mb-2">Server Transmission:</strong>
-                                The extension does not send any data to external servers. All text processing (PII detection and redaction) happens locally on your computer's CPU.
+                                Axiom Shield does not send text, files, or metadata to any external servers. All processing occurs locally within your browser environment.
                             </p>
                         </div>
                     </section>
 
                     <section className="animate-in fade-in slide-in-from-bottom-4 duration-500 delay-200">
-                        <h2 className="text-2xl font-bold mb-6 text-white border-l-4 border-green-accent pl-4">3. Permissions</h2>
+                        <h2 className="text-2xl font-bold mb-6 text-white border-l-4 border-green-accent pl-4">3. Browser Permissions</h2>
                         <p className="text-gray-400 leading-relaxed text-lg mb-6">
-                            To function, Axiom Shield requires specific browser permissions:
+                            Axiom Shield requests minimal permissions, strictly required to provide local safety protections:
                         </p>
-                        <div className="bg-surface/50 p-6 rounded-2xl border border-white/5 italic text-gray-400">
+                        <div className="bg-surface/50 p-6 rounded-2xl border border-white/5 space-y-4 text-gray-400">
                             <p>
-                                <strong className="text-white not-italic">"Read and change all your data on the websites you visit":</strong>
-                                This sounds scary, but it is technically required for the extension to "see" the chat box on ChatGPT or Gemini and redact sensitive text before you send it. We only use this permission to scan input fields for PII patterns (like emails and API keys). We do not read your browsing history.
+                                <strong className="text-white">Active Tab:</strong> Used to detect and protect text entered into supported AI tools when you are actively using them.
                             </p>
+                            <p>
+                                <strong className="text-white">Content Script Access (Site-specific):</strong> The extension runs only on explicitly supported AI websites (such as ChatGPT, Gemini, Claude, Perplexity). This allows Axiom Shield to scan text input fields locally for risk patterns before submission.
+                            </p>
+                            <div className="pt-4 border-t border-white/5 font-medium italic">
+                                Axiom Shield does NOT read browsing history, monitor unrelated websites, or record page content outside supported AI tools.
+                            </div>
                         </div>
                     </section>
 
                     <section className="animate-in fade-in slide-in-from-bottom-4 duration-500 delay-300">
-                        <h2 className="text-2xl font-bold mb-6 text-white border-l-4 border-green-accent pl-4">4. Third-Party Access</h2>
+                        <h2 className="text-2xl font-bold mb-6 text-white border-l-4 border-green-accent pl-4">4. How Detection Works</h2>
+                        <p className="text-gray-400 leading-relaxed text-lg mb-4">
+                            Axiom Shield scans text locally using predefined patterns to identify common risks such as:
+                        </p>
+                        <ul className="list-disc list-inside space-y-2 text-gray-400 text-lg ml-2">
+                            <li>Personally identifiable information (PII)</li>
+                            <li>API keys and secrets</li>
+                            <li>Potentially risky legal language</li>
+                        </ul>
+                        <p className="mt-4 text-gray-400 text-lg italic">
+                            Detected risks may be highlighted, redacted, or blocked before submission. Users remain in full control of what is sent.
+                        </p>
+                    </section>
+
+                    <section className="animate-in fade-in slide-in-from-bottom-4 duration-500 delay-400">
+                        <h2 className="text-2xl font-bold mb-6 text-white border-l-4 border-green-accent pl-4">5. Third-Party Access</h2>
                         <p className="text-gray-400 leading-relaxed text-lg">
                             Since we do not collect data, we have nothing to share with third parties, advertisers, or government agencies.
                         </p>
                     </section>
 
-                    <section className="animate-in fade-in slide-in-from-bottom-4 duration-500 delay-400">
-                        <h2 className="text-2xl font-bold mb-6 text-white border-l-4 border-green-accent pl-4">5. Open Source Verification</h2>
+                    <section className="animate-in fade-in slide-in-from-bottom-4 duration-500 delay-500">
+                        <h2 className="text-2xl font-bold mb-6 text-white border-l-4 border-green-accent pl-4">6. Open Source Verification</h2>
                         <p className="text-gray-400 leading-relaxed text-lg">
-                            Trust, but verify. Our core detection logic is open source. You can audit our code on GitHub to confirm that no data exfiltration exists.
+                            Trust, but verify. Core detection logic is open source and publicly auditable. Users can inspect the code to verify that no data exfiltration exists.
                         </p>
                     </section>
 
-                    <section className="animate-in fade-in slide-in-from-bottom-4 duration-500 delay-500">
-                        <h2 className="text-2xl font-bold mb-6 text-white border-l-4 border-green-accent pl-4">6. Contact</h2>
+                    <section className="animate-in fade-in slide-in-from-bottom-4 duration-500 delay-700">
+                        <h2 className="text-2xl font-bold mb-6 text-white border-l-4 border-green-accent pl-4">7. Contact</h2>
                         <p className="text-gray-400 text-lg">
-                            If you have questions about this policy, please contact us at: <a href="mailto:contact@aimagine.in" className="text-green-accent hover:underline font-bold">contact@aimagine.in</a>
+                            For questions about this policy, contact: <a href="mailto:contact@aimagine.in" className="text-green-accent hover:underline font-bold">contact@aimagine.in</a>
                         </p>
                     </section>
                 </div>

@@ -30,7 +30,7 @@ export default function TransparencySection() {
                 <div className="flex flex-col items-center text-center mb-16">
                     <h2 className="text-4xl font-bold mb-6 text-white">The Axiom Commitment</h2>
                     <p className="text-xl text-gray-300 max-w-2xl leading-relaxed">
-                        Security tools should be auditable. We have nothing to hide. That's why our core detection logic is open to everyone.
+                        Security tools should be auditable and predictable. That’s why Axiom Shield is built to be transparent by design.
                     </p>
                 </div>
 
@@ -48,7 +48,7 @@ export default function TransparencySection() {
                     <div className="text-left space-y-4 max-w-xl">
                         <h3 className="text-3xl font-bold text-white">Open Source Core</h3>
                         <p className="text-gray-400 leading-relaxed">
-                            Axiom Shield runs 100% client-side. The redaction logic, PII patterns, and liability warnings are local to your browser. Use, modify, and audit freely under the MIT License.
+                            Axiom Shield runs 100% client-side. The redaction logic, PII patterns, and liability warnings are local to your browser. Use, modify, and audit freely under the MIT License. Anyone can inspect how detection works. Nothing runs silently.
                         </p>
                         <div className="flex gap-4 pt-2">
                             <a href="https://github.com/productdeveloper/Axiom-Shield" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white hover:text-green-accent transition-colors font-bold">
