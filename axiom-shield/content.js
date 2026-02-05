@@ -20,8 +20,7 @@ const secretPatterns = {
   deepseek: /sk-[a-f0-9]{32,}/g,
   perplexity: /pplx-[a-zA-Z0-9]{20,}/g,
   huggingface: /hf_[a-zA-Z0-9]{20,}/g,
-  stripe: /sk_live_[a-zA-Z0-9]{15,}/g,
-  azure: /[a-f0-9]{32}/g
+  stripe: /sk_live_[a-zA-Z0-9]{15,}/g
 };
 
 const liabilityWords = ['guarantee', 'promise', 'warranty', 'refund', '100% safe'];
@@ -126,7 +125,7 @@ function toggleWarningBanner(words) {
     <div style="display: flex; align-items: start; gap: 12px;">
       <span style="font-size: 20px;">⚠️</span>
       <div style="flex: 1; line-height: 1.4;">
-        <strong>Legal Risk Detected</strong><br>
+        <strong>Potential Legal Risk</strong><br>
         <span style="font-size: 13px;">Word(s) ${wordList} may create liability.</span>
       </div>
       <button id="axiom-dismiss-btn" style="background: white; border: 1px solid #daa520; padding: 4px 10px; border-radius: 4px; cursor: pointer; color: #856404; font-size: 11px; font-weight: bold;">Dismiss</button>
@@ -157,7 +156,7 @@ function interceptSubmission(e) {
   if (hasSecrets) {
     e.preventDefault();
     e.stopImmediatePropagation();
-    alert('⚠️ API Key Detected! Submission blocked.');
+    alert('Potential API key detected. Message not sent to help prevent accidental exposure.');
     return false;
   }
 }

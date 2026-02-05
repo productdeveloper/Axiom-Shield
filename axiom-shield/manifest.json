@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Axiom Shield",
   "version": "1.0",
-  "description": "Privacy-first safety shield for ChatGPT. Redacts PII and blocks secret leaks.",
+  "description": "Privacy-first safety for AI tools. Detects and redacts PII, helps prevent secret leaks, and warns about risky language locally.",
   "permissions": [
     "activeTab",
     "scripting"
@@ -12,7 +12,7 @@
       "matches": [
         "https://chatgpt.com/*",
         "https://chat.openai.com/*",
-        "https://*.google.com/*",
+        "https://gemini.google.com/*",
         "https://*.perplexity.ai/*",
         "https://*.deepseek.com/*",
         "https://claude.ai/*",
