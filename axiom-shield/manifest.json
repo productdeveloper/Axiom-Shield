@@ -4,8 +4,7 @@
   "version": "1.0",
   "description": "Privacy-first safety for AI tools. Detects and redacts PII, helps prevent secret leaks, and warns about risky language locally.",
   "permissions": [
-    "activeTab",
-    "scripting"
+    "activeTab"
   ],
   "content_scripts": [
     {
