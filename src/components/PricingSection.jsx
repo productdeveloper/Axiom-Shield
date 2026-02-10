@@ -64,8 +64,17 @@ export default function PricingSection() {
                                 ))}
                             </ul>
 
-                            {plan.name !== "Pro" && (
-                                <button className={`w-full py-4 rounded-full font-bold transition-all ${plan.current ? 'bg-white/5 border border-white/10 text-gray-400 cursor-not-allowed' : 'bg-green-accent text-background hover:bg-green-500 shadow-[0_4px_20px_rgba(16,185,129,0.2)]'}`}>
+                            {plan.name === "Free" ? (
+                                <a
+                                    href="https://chromewebstore.google.com/detail/axiom-shield-%E2%80%93-privacy-fi/aajkcokfedagojjfiiahjbphplncpeed?pli=1"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="w-full py-4 rounded-full font-bold bg-green-accent text-background hover:bg-green-500 transition-all text-center shadow-[0_4px_20px_rgba(16,185,129,0.2)]"
+                                >
+                                    {plan.buttonText}
+                                </a>
+                            ) : (
+                                <button className="w-full py-4 rounded-full font-bold transition-all bg-white/5 border border-white/10 text-gray-400 cursor-not-allowed">
                                     {plan.buttonText}
                                 </button>
                             )}

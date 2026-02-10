@@ -20,17 +20,18 @@ export default function Hero() {
 
                     <div className="flex flex-col gap-3">
                         <div className="flex flex-wrap gap-4">
-                            <button className="bg-white/10 text-gray-400 px-8 py-4 rounded-full font-bold text-lg cursor-not-allowed border border-white/5 flex items-center gap-2">
+                            <a
+                                href="https://chromewebstore.google.com/detail/axiom-shield-%E2%80%93-privacy-fi/aajkcokfedagojjfiiahjbphplncpeed?pli=1"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-green-accent text-background px-8 py-4 rounded-full font-bold text-lg hover:bg-green-500 transition-all flex items-center gap-2 shadow-[0_0_20px_rgba(16,185,129,0.3)]"
+                            >
                                 Add to Chrome – Free
-                                <span className="w-2 h-2 bg-yellow-500 rounded-full animate-pulse"></span>
-                            </button>
+                            </a>
                             <a href="#features" className="bg-surface hover:bg-surface/80 text-white px-8 py-4 rounded-full font-bold text-lg transition-all text-center">
                                 Explore Features
                             </a>
                         </div>
-                        <p className="text-xs text-yellow-500/80 font-bold tracking-widest uppercase pl-4">
-                            Pending Chrome Web Store Approval
-                        </p>
                     </div>
 
                     <div className="flex gap-12">
