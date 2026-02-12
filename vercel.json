@@ -1,7 +1,7 @@
 {
     "rewrites": [
         {
-            "source": "/(.*)",
+            "source": "/((?!business-card|axiom-logo|assets/).*)",
             "destination": "/index.html"
         }
     ]
